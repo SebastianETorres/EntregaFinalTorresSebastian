@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+   /*Header*/
+#header{
+    background-color:chocolate;
+    border: 20px solid chocolate ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header .logo img{
+    width: 100px;
+    height: 100px;
+}
+#header .menu ul li a {
+    text-decoration: none;
+    color:black;
+    text-align: center;
+}
+#header li{
+    display: inline;
+    text-align: center;
+    margin: 0 10px 0 0;
+    padding: 2px 7px 2px 7px;
+    color: #666;
+    background-color: aqua;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+    /*Header*/
+
+
+
+    /*Main*/
+#main {
+    background-image:url(../img/Code.jpg);
+    background-size: cover;
+    background-color: #cccccc;
+}
+#main .titulo-principal{
+    color:red;
+    font-size: 100px;
+    font-style: italic;
+    text-align: center;
+} 
+#main .texto-principal{
+    color: wheat;
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+    /*Main*/
+
+
+
+    /*Index*/
+#find{
+    background-image: url(../img/index.jpg);
+    background-size:100%;
+}
+#main .htmlCss .titulo-principal{
+    color: brown;
+}
+#main .htmlCss{
+    background-image: url(../img/images.jpg);
+    background-size:contain;
+}
+
+#pag_p .principal{
+    margin: 200px;
+    text-align: center;
+}
+.principal h2{
+    font-weight: bold; 
+    font-style: italic;
+    font-size: 90px;
+    line-height: 3;
+    color: greenyellow;
+}
+.principal p{
+    font-weight:lighter; 
+    font-style:normal;
+    font-size: 40px;
+    line-height: 1.5;
+}
+.principal .b{
+    font-size: 25px;
+    font-size: 25px;
+}
+ul{
+    display: block;
+    font-weight:lighter;
+    font-size: 30px;
+    list-style-type: upper-roman;
+    color: red;
+    padding-bottom: 40px;
+    text-decoration:underline;
+}
+
+#pag_p .secundario{
+    margin-top: 150;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.secundario h3{
+    font-weight: bold; 
+    font-style: italic;
+    font-size: 90px;
+    line-height: 2;
+    color: chartreuse;
+}
+.secundario p{
+    font-weight:lighter; 
+    font-style:normal;
+    font-size: 40px;
+    line-height: 1.5;
+    text-decoration:underline;
+    color:bisque
+}
+.secundario iframe{
+    width: 1080px;
+    height: 980px;
+    border: 10px solid yellow;
+}
+    /*Index*/
+
+
+
+    /*programaEstudios*/
+#SS{
+    border: 10px solid darkgreen;
+    background-color: slategrey;
+}
+#SS .curso{
+    display: flex;
+    margin: 25px;
+}
+#SS .curso .curso_info{
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    color: red;
+    align-items: flex-start;
+    margin-right: 25px; ;
+}
+#SS .curso .curso_info p{
+    color: black;
+    background-color: grey;
+    text-align: left;
+}
+
+#SS .curso .curso_info2{
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    color: red;
+    align-items: flex-end;
+    margin-left: 25px;
+}
+#SS .curso .curso_info2 h2{
+    text-align: right;
+}
+#SS .curso .curso_info2 p{
+    color: black;
+    background-color: grey;
+    text-align: right;
+}
+
+.imagen{
+    height: 200px;
+    width: 200px;
+}
+
+#consid{
+    text-align: center;
+    background-color: aquamarine;
+    border: 40px solid black;
+}
+#consid h3{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    margin-bottom: 50px;
+    background-color: gold;
+}
+
+#consid .idiom label{
+    background-color: brown;
+    font-size: 30px;
+    font-style:inherit;
+    margin-right: 30px;
+}
+#consid .idiom input{
+    font-size: 30px;
+}
+
+#consid .curs label{
+    background-color: brown;
+    font-size: 30px;
+    font-style:inherit;
+    margin-right: 30px;
+    position: relative;
+    bottom: 324px;
+    right: 24px;
+}
+#consid .curs textarea{
+    font-size: 30px;
+    position: relative;
+    left: 160px ;
+}
+
+#consid .cuest .botones input{
+    display: inline;
+    font-size:30px;
+    font-family:Verdana,Helvetica;
+    font-weight:bold;
+    color:white;
+    background:goldenrod;
+    border:0px;
+    width:500px;
+    height:70px;
+}
+    /*Programa Estudios*/
+
+
+
+    /*Precio Cursos*/
+#pagpre{
+    background-color: yellow;
+}
+.precio{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.precio table {
+    line-height:2 ;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width : 350px;
+    border-collapse : separate;
+    empty-cells : hide;
+    border: black solid 10px;
+    text-align: center;
+    border-spacing: 50px 5px;
+    caption-side: bottom;
+    font-family: Arial;
+    font-style:italic;
+    font-size: 40px;
+    background-image:url(../img/Code.jpg) ;
+    background-color: blue;
+    color: white;
+}
+td {
+    padding : 20px;
+    border-style : solid;
+    border-width : 2px;
+    border-color : #999999;
+    border: crimson solid 5px;
+    background-color: blue;
+}
+.precio td img{
+    width: 100px;
+    height: 100px;
+}
+    /*Precio Cursos*/
+
+
+
+    /*Preguntas Frecuentes*/
+#PF{
+    border: 20px solid yellow;
+    background-image: url(../img/duda.png);
+    background-size: cover;
+    margin-bottom: 50px;
+}    
+#PF div{
+    text-align: center;
+    margin-bottom: 40px;
+}
+#PF .preg h3{
+    font-size: 40px;
+    font-family: cursive;
+    color: crimson;
+}
+#PF .preg p{
+    font-size: 25px;
+    font-family: Georgia, serif;
+    color:teal;
+}
+    /*Preguntas Frecuentes*/
+
+
+
+    /*Sobre Nos*/
+#FSN{
+    background-image: url(../img/programacion.jpg);
+    background-size:100%;
+}
+#info{
+    background-size: cover;
+    margin-bottom: 50px;
+}
+#info h2{
+    background-color: black;
+    color:orange;
+    font-size: 50px;
+    font-style: italic;
+    margin-bottom: 50px;
+    width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#info p{
+    background-color: black;
+    color:orange;
+    text-align: center;
+    font-size: 25px;
+    font-family:'Times New Roman';
+    margin-bottom: 50px;
+}
+    /*Sobre Nos*/
+
+
+
+    /*Contacto*/
+#contacto{
+    background-color: greenyellow;
+    border: 10px solid greenyellow;
+}
+#contacto .AA{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align:center;
+    border: 4px black solid;
+}
+#contacto .AAB{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align:center;
+    border: 4px black solid;
+}
+#contacto .textos{
+    display: inline-block;
+    align-items: center;
+    align-content: center;
+    font-size: 50px;
+}
+#contacto .escrito{
+    display: inline;
+    align-content: center;
+    align-items:baseline;
+}
+#contacto .mapa{
+    display: inline;
+    align-content: center;
+    align-items: center;
+    height: 30px;
+}
+#contacto label{
+    background-color:chocolate;
+    margin-right: 30px;
+    font-size: 40px;
+}
+#contacto .AAB label{
+    background-color:chocolate;
+    margin-right: 20px;
+    font-size: 20px;
+}
+#contacto #pais{
+    background-color:chocolate;
+    margin-right: 30px;
+    font-size: 40px;
+}
+#contacto #mensajes{
+    background-color:chocolate;
+    margin-right: 30px;
+    font-size: 40px;
+}
+#contacto #adjunto{
+    background-color:chocolate;
+    margin-right: 30px;
+    font-size: 40px;
+}
+#contacto .escrit{
+    font-size: 40px;
+    width: 900px;
+}
+#contacto .bot{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    font-size:30px;
+    font-family:Verdana,Helvetica;
+    font-weight:bold;
+    background-color:gold;
+    border:5px black solid;
+}
+    /*Contacto*/
+
+
+
+    /*Footer*/
+#footer{
+    background-image:url(../img/Code.jpg);
+    background-size: cover;
+    background-color: #cccccc;
+}
+#footer h2{
+    background-color: gray;
+    font-size: 80px;
+    text-align: center;
+}
+#footer p{
+    background-color: gray;
+    font-size: 45px;
+    text-align: center;
+}
+#footer .imagen{
+    display: inline;
+    margin-left: 190px;
+    margin-right: 190px;
+}
+#footer img{
+    width: 200px;
+    height: 200px;
+}
+    /*Footer*/
