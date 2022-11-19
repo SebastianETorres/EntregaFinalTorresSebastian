@@ -4,9 +4,59 @@
     box-sizing: border-box;
 }
 
+@keyframes ef-fo {
+    0%{
+        background-color: gray;
+    }
+    20%{
+        background-color:azure;
+    }
+    40%{
+        background-color:bisque;
+    }
+    60%{
+        background-color:burlywood;
+    }
+    80%{
+        background-color:darkseagreen;
+    }
+    100%{
+        background-color:lightslategrey;
+    }
+}
+
+@keyframes ef-he {
+    0%{
+        background-color: chocolate;
+    }
+    20%{
+        background-color:coral;
+    }
+    40%{
+        background-color:gold;
+    }
+    60%{
+        background-color:yellow;
+    }
+    80%{
+        background-color:goldenrod;
+    }
+    90%{
+        background-color:goldenrod;
+    }
+    100%{
+        background-color:chocolate;
+    }
+}
+
+
    /*Header*/
 .header{
-    background-color:chocolate;
+    animation: ef-he;
+    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
     border: 20px solid chocolate ;
     display: flex;
     align-items: center;
@@ -16,6 +66,9 @@
 .header img{
     width: 100px;
     height: 100px;
+}
+.header .menu ul{
+    text-decoration: none;
 }
 .header .menu ul li a {
     text-decoration: none;
@@ -32,6 +85,7 @@
     border: 1px solid #ccc;
     text-decoration: none;
 }
+
     /*Header*/
 
 
@@ -55,6 +109,79 @@
     margin-bottom: 50px;
 }
     /*Main*/
+
+
+
+
+
+    /*Celular*/
+
+@media (max-width:425px) {
+   /*Header*/
+    .header{
+        background-color:chocolate;
+        border: 10px solid chocolate ;
+        justify-content: space-between;
+        font-family: 'Oswald', sans-serif;
+        display: flex;
+    }
+    .header img{
+        width: 200px;
+        height: 300px;
+    }
+    .header .menu ul{
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .header .menu ul li a {
+        text-decoration: none;
+        color:black;
+        text-align: center;
+        font-size: 20px;
+    }
+    .header li{
+        display: inline;
+        text-align: center;
+        margin: 0 5px 0 0;
+        padding: 1px 4px 1px 4px;
+        color: #666;
+        background-color: aqua;
+        border: 1px solid #ccc;
+        text-decoration: none;
+    }
+    /*Header*/
+
+
+
+    /*Main*/
+    .main {
+        background-image: url("../img/Code.jpg");
+        background-size: cover;
+        background-color: #cccccc;
+        font-family: 'Oswald', sans-serif;
+    }
+    .main .titulo-principal{
+        color:red;
+        font-size: 3rem;
+        text-align: center;
+    } 
+    .main .texto-principal{
+        color: wheat;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+    /*Main*/
+}
+
+    /*Celular/
+
+
+
+
+
 
 
 
@@ -129,10 +256,14 @@ ul{
 
 
     /*programaEstudios*/
+
 .SS{
     border: 10px solid darkgreen;
     background-color: slategrey;
     font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 .SS .curso{
     display: flex;
@@ -142,10 +273,10 @@ ul{
     font-weight: bold;
     font-size: 25px;
     color: red;
-    align-items: flex-start;
-    margin-right: 25px; ;
+    margin-right: 25px;
+    width: 50%;
 }
-.SS .curso .curso_info p{
+.SS p{
     color: black;
     background-color: grey;
     text-align: left;
@@ -155,16 +286,8 @@ ul{
     font-weight: bold;
     font-size: 25px;
     color: red;
-    align-items: flex-end;
     margin-left: 25px;
-}
-.SS .curso .curso_info2 h2{
-    text-align: right;
-}
-.SS .curso .curso_info2 p{
-    color: black;
-    background-color: grey;
-    text-align: right;
+    width: 50%;
 }
 
 .imagen{
@@ -173,53 +296,188 @@ ul{
 }
 
 .consid{
-    text-align: center;
     background-color: aquamarine;
     border: 40px solid black;
     font-family: 'Oswald', sans-serif;
-
+    height: 30%;
 }
+
+.cuest{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+}
+
 .consid h3{
     color: black;
     text-align: center;
-    font-size: 40px;
-    margin-bottom: 50px;
+    font-size: 3rem;
+    margin-bottom: 25px;
     background-color: gold;
 }
 
-.consid .idiom label{
+.consid .idiom{
     background-color: brown;
-    font-size: 30px;
-    margin-right: 30px;
+    font-size: 2rem;
+    margin-right: 3rem;
+    width: auto;
+    grid-column: 2/3;
 }
-.consid .idiom input{
-    font-size: 30px;
+.consid input{
+    font-size: 2rem;
+    width: 400px;
+    height: 50px;
 }
 
-.consid .curs label{
+.consid .curs{
     background-color: brown;
-    font-size: 30px;
-    margin-right: 30px;
-    position: relative;
-    bottom: 324px;
-    right: 24px;
+    font-size: 2rem;
+    margin-right: 3rem;
+    width: auto;
+    grid-column: 2/3;
+    
 }
-.consid .curs textarea{
-    font-size: 30px;
-    position: relative;
-    left: 160px ;
+.consid textarea{
+    font-size: 1rem;
+    width: 400px;
 }
-
-.consid .cuest .botones input{
-    display: inline;
-    font-size:30px;
+.BT{
+    display: flex;
+    justify-content: center;
+}
+.BT .BT_1{
+    margin: 5px;
+}
+.BT .botones input{
+    font-size: 2rem;
     font-weight:bold;
     color:white;
     background:goldenrod;
-    border:0px;
-    width:500px;
-    height:70px;
+    border:0rem;
+    width:auto;
+    height:auto;
 }
+
+    /*Celular*/
+
+@media (max-width:425px) {
+    .SS{
+        border: 10px solid darkgreen;
+        background-color: slategrey;
+        font-family: 'Oswald', sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .SS .curso{
+        display: flex;
+        margin: 25px;
+    }
+    .SS .curso .curso_info{
+        font-weight: bold;
+        font-size: 25px;
+        color: red;
+        margin-right: 25px;
+        width: 50%;
+    }
+    .SS p{
+        color: black;
+        background-color: grey;
+        text-align: left;
+        font-size: 1rem;
+    }
+    
+    .SS .curso .curso_info2{
+        font-weight: bold;
+        font-size: 25px;
+        color: red;
+        margin-left: 25px;
+        width: 50%;
+    }
+    
+    .imagen{
+        height: 100px;
+        width: 100px;
+    }
+    
+    .consid{
+        background-color: aquamarine;
+        border: 5px solid black;
+        font-family: 'Oswald', sans-serif;
+        height: 30%;
+    }
+    
+    .cuest{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+    }
+    
+    .consid h3{
+        color: black;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 10px;
+        background-color: gold;
+    }
+    
+    .consid .idiom{
+        background-color: brown;
+        font-size: 1.5rem;
+        width: 100px;
+        height: 250px;
+        grid-column: 1/2;
+        margin-left: 10px;
+    }
+    .consid input{
+        font-size: 2rem;
+        font-size: 1rem;
+        width: 240px;
+        height: 250px;
+    }
+    
+    .consid .curs{
+        background-color: brown;
+        font-size: 1.5rem;
+        margin-right: 3rem;
+        width: 100px;
+        height: 200px;
+        grid-column: 1/2;
+        margin-left: 10px;
+    }
+    .consid textarea{
+        font-size: 1rem;
+        width: 240px;
+        height: 200px;
+    }
+    .BT{
+        display: flex;
+        justify-content: center;
+    }
+    .BT .BT_1{
+        margin: 5px;
+    }
+    .BT .botones input{
+        font-size: 1.3rem;
+        font-weight:bold;
+        color:white;
+        background:goldenrod;
+        border:0rem;
+        width:auto;
+        height:auto;
+    }
+
+} 
+
+    /*Celular*/
+
+
     /*Programa Estudios*/
 
 
@@ -323,48 +581,56 @@ td {
 
     /*Contacto*/
 .contacto{
-    background-color: greenyellow;
+    background-color:bisque;
     border: 10px solid greenyellow;
     font-family: 'Oswald', sans-serif;
+    height: 90%;
+    width: 70%;
+    margin-left:15%;
 }
-.contacto .AA{
-    margin-bottom: 15px;
-    margin-top: 15px;
-    text-align:center;
-    border: 4px black solid;
+
+#formu{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 0.6fr 0.6fr 1.5fr 0.6fr 0.6fr 1.5fr 0.6fr 0.6fr 0.6fr 0.6fr;
+    gap: 20px;
 }
-.contacto .AAB{
-    margin-bottom: 15px;
-    margin-top: 15px;
-    text-align:center;
-    border: 4px black solid;
-}
+
 .contacto .textos{
-    display: inline-block;
-    align-items: center;
-    align-content: center;
-    font-size: 50px;
+    font-size: 35px;    
+    grid-column: 1/2;
+    justify-self: end;
 }
 .contacto .escrito{
-    display: inline;
-    align-content: center;
-    align-items:baseline;
+    font-size: 30px;
+    grid-column: 2/3;
+    justify-self: start;
 }
-.contacto .mapa{
-    display: inline;
-    align-content: center;
-    align-items: center;
-    height: 30px;
+
+.contacto .escrito2 input{
+    width: 40rem;    
+    transition: 1s;
 }
+.contacto .escrito3 input{
+    width: 10rem;
+    font-size: 30px;
+    transition: 1s;
+}
+.contacto input{
+    width: 25rem;
+    height: 3rem;
+    transition: 1s;
+}
+.contacto .escrito input:focus{
+    font-size: 30px;
+    width: 40rem;
+    background-color: yellow;
+}
+
+
 .contacto label{
     background-color:chocolate;
-    margin-right: 30px;
     font-size: 40px;
-}
-.contacto .AAB label{
-    background-color:chocolate;
-    margin-right: 20px;
-    font-size: 35px;
 }
 .contacto #pais{
     background-color:chocolate;
@@ -372,20 +638,32 @@ td {
     font-size: 40px;
 }
 .contacto #mensajes{
-    background-color:chocolate;
-    margin-right: 30px;
-    font-size: 40px;
+    font-size: 30px;
+    width: 30rem;
+    height: 5rem;
+}
+.contacto #mensajes:focus{
+    font-size: 30px;
+    width: 40rem;
+    height: 15rem;
+    transition: 1.5s;
+    background-color:yellowgreen;
+}
+.contacto #Mapa{
+    width: 600px;
+    height: 200px;
 }
 .contacto #adjunto{
     background-color:chocolate;
-    margin-right: 30px;
     font-size: 40px;
 }
-.contacto .escrito{
-    font-size: 35px;
-    width: 900px;
+
+.boton{
+    grid-column: 1/3;
+    justify-self: center;
 }
-.contacto .bot{
+
+.bot{
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 5px;
@@ -399,6 +677,92 @@ td {
 
 
 
+
+
+    /*Celular*/
+
+@media (max-width:425px) {
+    .contacto{
+        background-color:bisque;
+        border: 10px solid greenyellow;
+        font-family: 'Oswald', sans-serif;
+        height: 100%;
+        width: 425px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #formu{
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-rows: 0.3fr 0.3fr 0.725fr 0.3fr 0.3fr 0.725fr 0.3fr 0.3fr 0.3fr 0.3fr;
+        gap: 5px;
+    }
+    
+    .contacto .textos{  
+        grid-column: 1/2;
+        justify-self: start;
+    }
+    .contacto .escrito{
+        grid-column: 2/3;
+    }
+    
+    .contacto .escrito2 input{
+        width: 18rem;
+        font-size: 15px;
+    }
+    .contacto .escrito3 input{
+        width: 6rem;
+        font-size: 15px;
+    }
+    .contacto input{
+        width: 15rem;
+        height: 3rem;
+    }
+    
+    
+    
+    .contacto label{
+        background-color:chocolate;
+        font-size: 20px;
+    }
+    .contacto #pais{
+        background-color:chocolate;
+        font-size: 20px;
+        margin-right: 30px;
+    }
+    .contacto #mensajes{
+        font-size: 20px;
+        width: 19rem;
+        height: 7.5rem;
+    }
+    .contacto #adjunto{
+        background-color:chocolate;
+        font-size: 20px;
+    }
+    
+    .boton{
+        grid-column: 1/3;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .bot{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 2.5px;
+        margin-bottom: 1.5px;
+        font-size: 15px;
+        font-weight:bold;
+        background-color:gold;
+        border:5px black solid;
+    }
+}
+    /*Celular*/
+
+
+
     /*Footer*/
 .footer{
     background-image:url("../img/Code.jpg");
@@ -407,22 +771,73 @@ td {
     font-family: 'Oswald', sans-serif;
 }
 .footer h2{
-    background-color: gray;
+    animation: ef-fo;
+    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
     font-size: 80px;
     text-align: center;
 }
 .footer p{
-    background-color: gray;
+    animation: ef-fo;
+    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
     font-size: 45px;
     text-align: center;
 }
-.footer .imagen{
-    display: inline;
-    margin-left: 190px;
-    margin-right: 190px;
+.footer .a1{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
 }
 .footer img{
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
 }
     /*Footer*/
+
+    /*Celular*/
+
+
+@media (max-width:425px) {
+
+    .footer{
+        background-image:url("../img/Code.jpg");
+        background-size: cover;
+        background-color: #cccccc;
+        font-family: 'Oswald', sans-serif;
+    }
+    .footer h2{
+        animation: ef-fo;
+        animation-delay: 0s;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .footer p{
+        animation: ef-fo;
+        animation-delay: 0s;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .footer .a1{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+    }
+    .footer img{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+    /*Celular*/

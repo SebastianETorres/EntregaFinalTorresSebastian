@@ -35,43 +35,37 @@
         <h1 class="titulo-principal">FORMULARIO DE CONTACTO</h1>
     </main>
     
-    <section class="contacto">
+    <section class="contacto">  
 
         <form action="x.php" method="get" id="formu">
              
-            <div class="AA">
                 <div class="textos">
                     <label for="nombre">Nombre:</label>
                 </div>
                 <div class="escrito">
                     <input type="text" id="nombre" placeholder="Ingrese su Nombre" class="escrit">
                 </div>
-            </div>
 
             
-            <div class="AA">
                 <div class="textos">
                     <label for="apellido">Apellido:</label>
                 </div>
                 <div class="escrito">
                     <input type="text" id="apellido" placeholder="Ingrese su apellido" class="escrit">
                 </div>
-            </div>
 
 
-            <div class="AA">
                 <div class="textos">
                     <label for="direccion">Direccion:</label>
                 </div>
                 <div class="escrito">
-                    <input type="text" id="direccion" placeholder="Ingrese su ubicacion" class="escrit">
+                    <input type="text" id="direccion" class="direct" placeholder="Ingrese su ubicacion" class="escrit">
+                    <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14323.658721610367!2d-58.414833246334894!3d-34.61141381217263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1siframe%20google%20maps!5e0!3m2!1ses-419!2sar!4v1666992301225!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" id="Mapa" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-                <div class="mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14323.658721610367!2d-58.414833246334894!3d-34.61141381217263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1siframe%20google%20maps!5e0!3m2!1ses-419!2sar!4v1666992301225!5m2!1ses-419!2sar" width="300" height="230" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
 
-            <div class="AA">
+
                 <div class="textos">
                     <label for="pais">Region:</label>
                 </div>
@@ -85,72 +79,55 @@
                         <option value="5">OCEANIA</option>
                     </select>
                 </div>
-            </div>
 
 
-            <div class="AA">
                 <div class="textos">
                     <label for="mail">Email:</label>
                 </div>
                 <div class="escrito">
                     <input type="email" id="mail" class="escrit">
                 </div>
-            </div>
 
 
-            <div class="AA">
                 <div class="textos">
                     <label for="msj">Dejenos su Mensaje:</label>
                 </div>
                 <div class="escrito">
                     <textarea name="msj" id="mensajes" cols="30" rows="5" placeholder="Escriba un mensaje conciso y claro"></textarea>
                 </div>
-            </div>
 
 
-            <div class="AA">
                 <div class="textos">
                     <label for="adjunto">Adjuntar:</label>
                 </div>
-                <div class="escrito">
+                <div class="escrito2">
                     <input type="file" id="adjunto">
                 </div>
-            </div>
 
 
-            <div class="AAB">
                 <div class="textos">
                     <label for="tipo">Tipo de Persona:</label>
                 </div>
-                <div class="escrito">
+                <div class="escrito3">
                     <input type="radio" name="tipo" id="juridica">Juridica
-                </div>
-                <div class="escrito">
                     <input type="radio" name="tipo" id="humana">Humana
                 </div>
-            </div>
 
 
-            <div class="AAB">
                 <div class="textos">
                     <label for="aceptar">¿Acepta los Terminos y Condiciones?</label>
                 </div>
-                <div class="escrito">
+                <div class="escrito3">
                     <input type="checkbox" name="aceptar" id="termycond">Terminos y Condiciones
-                </div>
-                <div class="escrito">
                     <input type="checkbox" name="aceptar" id="reccorres">Recibir Novedades de HappyProgram
                 </div>
-            </div>
 
 
-            <div class="AA">
-                <div class="escrito">
+                <div class="boton">
                     <input type="submit" value="Enviar Ahora" class="bot">
                     <input type="reset" value="Resetear Formulario" class="bot">
                     <input type="button" value="JS" class="bot">
                 </div>
-            </div>
         </form>
     </section>
 
@@ -158,15 +135,17 @@
     <footer class="footer">
         <h2>¡¡¡Encuentranos en Nuestras Redes sociales!!!</h2>
         <p>Nunca fue tan fácil programar algo</p>
+        <div class="a1">
             <a href="https://www.instagram.com/torresseba_/?hl=es-la" class="imagen">
-                <img src="../img/ig.jpg" alt="instagram">
+            <img src="../img/ig.jpg" alt="instagram">
             </a>
             <a href="https://twitter.com/home?lang=es" class="imagen">
-                <img src="../img/twitter.png" alt="twitter">
+            <img src="../img/twitter.png" alt="twitter">
             </a>
             <a href="https://www.whatsapp.com/" class="imagen">
-                <img src="../img/whatsapp.jpg" alt="whatsapp">
+            <img src="../img/whatsapp.jpg" alt="whatsapp">
             </a>
+        </div>
         <p>Copyright © HappyProgram 2022. All Rights Reserved.</p>
     </footer>
 </body>
