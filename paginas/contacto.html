@@ -37,13 +37,13 @@
     
     <section class="contacto">  
 
-        <form action="x.php" method="get" id="formu">
+        <form action="x.php" method="get" class="formu">
              
                 <div class="textos">
                     <label for="nombre">Nombre:</label>
                 </div>
                 <div class="escrito">
-                    <input type="text" id="nombre" placeholder="Ingrese su Nombre" class="escrit">
+                    <input type="text" class="nombre" placeholder="Ingrese su Nombre" class="escrit">
                 </div>
 
             
@@ -51,7 +51,7 @@
                     <label for="apellido">Apellido:</label>
                 </div>
                 <div class="escrito">
-                    <input type="text" id="apellido" placeholder="Ingrese su apellido" class="escrit">
+                    <input type="text" class="apellido" placeholder="Ingrese su apellido" class="escrit">
                 </div>
 
 
@@ -59,9 +59,9 @@
                     <label for="direccion">Direccion:</label>
                 </div>
                 <div class="escrito">
-                    <input type="text" id="direccion" class="direct" placeholder="Ingrese su ubicacion" class="escrit">
+                    <input type="text" class="direccion" class="direct" placeholder="Ingrese su ubicacion" class="escrit">
                     <div class="mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14323.658721610367!2d-58.414833246334894!3d-34.61141381217263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1siframe%20google%20maps!5e0!3m2!1ses-419!2sar!4v1666992301225!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" id="Mapa" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14323.658721610367!2d-58.414833246334894!3d-34.61141381217263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1siframe%20google%20maps!5e0!3m2!1ses-419!2sar!4v1666992301225!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" class="Mapa" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
 
@@ -70,7 +70,7 @@
                     <label for="pais">Region:</label>
                 </div>
                 <div class="escrito">
-                    <select name="regiones" id="pais">
+                    <select name="regiones" class="pais">
                         <option value="1">LAS</option>
                         <option value="2">LAN</option>
                         <option value="3">EUROPA</option>
@@ -85,7 +85,7 @@
                     <label for="mail">Email:</label>
                 </div>
                 <div class="escrito">
-                    <input type="email" id="mail" class="escrit">
+                    <input type="email" class="mail" class="escrit">
                 </div>
 
 
@@ -93,7 +93,7 @@
                     <label for="msj">Dejenos su Mensaje:</label>
                 </div>
                 <div class="escrito">
-                    <textarea name="msj" id="mensajes" cols="30" rows="5" placeholder="Escriba un mensaje conciso y claro"></textarea>
+                    <textarea name="msj" class="mensajes" cols="30" rows="5" placeholder="Escriba un mensaje conciso y claro"></textarea>
                 </div>
 
 
@@ -101,7 +101,7 @@
                     <label for="adjunto">Adjuntar:</label>
                 </div>
                 <div class="escrito2">
-                    <input type="file" id="adjunto">
+                    <input type="file" class="adjunto">
                 </div>
 
 
@@ -109,8 +109,8 @@
                     <label for="tipo">Tipo de Persona:</label>
                 </div>
                 <div class="escrito3">
-                    <input type="radio" name="tipo" id="juridica">Juridica
-                    <input type="radio" name="tipo" id="humana">Humana
+                    <input type="radio" name="tipo" class="juridica">Juridica
+                    <input type="radio" name="tipo" class="humana">Humana
                 </div>
 
 
@@ -118,8 +118,8 @@
                     <label for="aceptar">¿Acepta los Terminos y Condiciones?</label>
                 </div>
                 <div class="escrito3">
-                    <input type="checkbox" name="aceptar" id="termycond">Terminos y Condiciones
-                    <input type="checkbox" name="aceptar" id="reccorres">Recibir Novedades de HappyProgram
+                    <input type="checkbox" name="aceptar" class="termycond">Terminos y Condiciones
+                    <input type="checkbox" name="aceptar" class="reccorres">Recibir Novedades de HappyProgram
                 </div>
 
 

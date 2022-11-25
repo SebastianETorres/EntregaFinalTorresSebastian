@@ -64,8 +64,8 @@
     font-family: 'Oswald', sans-serif;
 }
 .header img{
-    width: 100px;
-    height: 100px;
+    width: 50%;
+    height: 50%;
 }
 .header .menu ul{
     text-decoration: none;
@@ -73,11 +73,10 @@
 .header .menu ul li a {
     text-decoration: none;
     color:black;
-    text-align: center;
 }
 .header li{
+    font-size: 75%;
     display: inline;
-    text-align: center;
     margin: 0 10px 0 0;
     padding: 2px 7px 2px 7px;
     color: #666;
@@ -99,90 +98,16 @@
 }
 .main .titulo-principal{
     color:red;
-    font-size: 100px;
+    font-size: 5vw;
     text-align: center;
 } 
 .main .texto-principal{
     color: wheat;
     text-align: center;
     font-size: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
     /*Main*/
-
-
-
-
-
-    /*Celular*/
-
-@media (max-width:425px) {
-   /*Header*/
-    .header{
-        background-color:chocolate;
-        border: 10px solid chocolate ;
-        justify-content: space-between;
-        font-family: 'Oswald', sans-serif;
-        display: flex;
-    }
-    .header img{
-        width: 200px;
-        height: 300px;
-    }
-    .header .menu ul{
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-    .header .menu ul li a {
-        text-decoration: none;
-        color:black;
-        text-align: center;
-        font-size: 20px;
-    }
-    .header li{
-        display: inline;
-        text-align: center;
-        margin: 0 5px 0 0;
-        padding: 1px 4px 1px 4px;
-        color: #666;
-        background-color: aqua;
-        border: 1px solid #ccc;
-        text-decoration: none;
-    }
-    /*Header*/
-
-
-
-    /*Main*/
-    .main {
-        background-image: url("../img/Code.jpg");
-        background-size: cover;
-        background-color: #cccccc;
-        font-family: 'Oswald', sans-serif;
-    }
-    .main .titulo-principal{
-        color:red;
-        font-size: 3rem;
-        text-align: center;
-    } 
-    .main .texto-principal{
-        color: wheat;
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 50px;
-    }
-    /*Main*/
-}
-
-    /*Celular/
-
-
-
-
-
-
 
 
     /*Index*/
@@ -201,54 +126,51 @@
 }
 
 .pag_p .principal{
-    margin: 200px;
+    margin: 1rem;
     text-align: center;
 }
 .principal h2{
     font-weight: bold; 
-    font-size: 90px;
+    font-size: 5vw;
     line-height: 3;
     color: greenyellow;
 }
 .principal p{
     font-weight:lighter; 
-    font-size: 40px;
+    font-size: 3vw;
     line-height: 1.5;
 }
 .principal .b{
-    font-size: 25px;
-    font-size: 25px;
+    font-size: 2vw;
 }
 ul{
     display: block;
     font-weight:lighter;
-    font-size: 30px;
+    font-size: 2.5vw;
     color: red;
-    padding-bottom: 40px;
     text-decoration:underline;
 }
 
 .pag_p .secundario{
-    margin-top: 150;
-    margin-bottom: 50px;
+    margin-bottom: 1rem;
     text-align: center;
 }
 .secundario h3{
     font-weight: bold; 
-    font-size: 90px;
+    font-size: 4vw;
     line-height: 2;
     color: chartreuse;
 }
 .secundario p{
     font-weight:lighter; 
-    font-size: 40px;
+    font-size: 2.5vw;
     line-height: 1.5;
     text-decoration:underline;
     color:bisque
 }
 .secundario iframe{
-    width: 1080px;
-    height: 980px;
+    width: 75%;
+    height: 40vw;
     border: 10px solid yellow;
 }
     /*Index*/
@@ -271,7 +193,7 @@ ul{
 }
 .SS .curso .curso_info{
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.5vw;
     color: red;
     margin-right: 25px;
     width: 50%;
@@ -284,15 +206,15 @@ ul{
 
 .SS .curso .curso_info2{
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.5vw;
     color: red;
     margin-left: 25px;
     width: 50%;
 }
 
 .imagen{
-    height: 200px;
-    width: 200px;
+    height: 10vw;
+    width: 10vw;
 }
 
 .consid{
@@ -309,40 +231,44 @@ ul{
     grid-template-rows: 1fr 3fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 15px;
+    overflow-x: auto;
 }
 
 .consid h3{
     color: black;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2vw;
     margin-bottom: 25px;
     background-color: gold;
 }
 
 .consid .idiom{
     background-color: brown;
-    font-size: 2rem;
-    margin-right: 3rem;
-    width: auto;
+    font-size: 1vw;
+    margin-right: 3vw;
+    width: 20vw;
+    height: 2vw;
     grid-column: 2/3;
 }
 .consid input{
-    font-size: 2rem;
-    width: 400px;
-    height: 50px;
+    font-size: 1vw;
+    width: 20vw;
+    height: 2vw;
 }
 
 .consid .curs{
     background-color: brown;
-    font-size: 2rem;
-    margin-right: 3rem;
-    width: auto;
+    font-size: 1vw;
+    margin-right: 3vw;
+    width: 20vw;
+    height: 2vw;
     grid-column: 2/3;
     
 }
 .consid textarea{
-    font-size: 1rem;
-    width: 400px;
+    font-size: 1vw;
+    width: 20vw;
+    height: 4vw;
 }
 .BT{
     display: flex;
@@ -352,7 +278,6 @@ ul{
     margin: 5px;
 }
 .BT .botones input{
-    font-size: 2rem;
     font-weight:bold;
     color:white;
     background:goldenrod;
@@ -361,126 +286,7 @@ ul{
     height:auto;
 }
 
-    /*Celular*/
-
-@media (max-width:425px) {
-    .SS{
-        border: 10px solid darkgreen;
-        background-color: slategrey;
-        font-family: 'Oswald', sans-serif;
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-    .SS .curso{
-        display: flex;
-        margin: 25px;
-    }
-    .SS .curso .curso_info{
-        font-weight: bold;
-        font-size: 25px;
-        color: red;
-        margin-right: 25px;
-        width: 50%;
-    }
-    .SS p{
-        color: black;
-        background-color: grey;
-        text-align: left;
-        font-size: 1rem;
-    }
-    
-    .SS .curso .curso_info2{
-        font-weight: bold;
-        font-size: 25px;
-        color: red;
-        margin-left: 25px;
-        width: 50%;
-    }
-    
-    .imagen{
-        height: 100px;
-        width: 100px;
-    }
-    
-    .consid{
-        background-color: aquamarine;
-        border: 5px solid black;
-        font-family: 'Oswald', sans-serif;
-        height: 30%;
-    }
-    
-    .cuest{
-        display: grid;
-        gap: 20px;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr 1fr;
-        grid-column-gap: 10px;
-        grid-row-gap: 15px;
-    }
-    
-    .consid h3{
-        color: black;
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 10px;
-        background-color: gold;
-    }
-    
-    .consid .idiom{
-        background-color: brown;
-        font-size: 1.5rem;
-        width: 100px;
-        height: 250px;
-        grid-column: 1/2;
-        margin-left: 10px;
-    }
-    .consid input{
-        font-size: 2rem;
-        font-size: 1rem;
-        width: 240px;
-        height: 250px;
-    }
-    
-    .consid .curs{
-        background-color: brown;
-        font-size: 1.5rem;
-        margin-right: 3rem;
-        width: 100px;
-        height: 200px;
-        grid-column: 1/2;
-        margin-left: 10px;
-    }
-    .consid textarea{
-        font-size: 1rem;
-        width: 240px;
-        height: 200px;
-    }
-    .BT{
-        display: flex;
-        justify-content: center;
-    }
-    .BT .BT_1{
-        margin: 5px;
-    }
-    .BT .botones input{
-        font-size: 1.3rem;
-        font-weight:bold;
-        color:white;
-        background:goldenrod;
-        border:0rem;
-        width:auto;
-        height:auto;
-    }
-
-} 
-
-    /*Celular*/
-
-
     /*Programa Estudios*/
-
-
 
     /*Precio Cursos*/
 .pagpre{
@@ -488,21 +294,22 @@ ul{
     font-family: 'Oswald', sans-serif;
 }
 .precio{
-    margin-left: 20%;
-    margin-right: 20%;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
 }
 .precio table {
     line-height:2 ;
     margin-top: 25px;
     margin-bottom: 25px;
-    width : 350px;
+    width : 30vw;
     border-collapse : separate;
     empty-cells : hide;
     border: black solid 10px;
     text-align: center;
-    border-spacing: 50px 5px;
+    border-spacing: 40px 5px;
     caption-side: bottom;
-    font-size: 40px;
+    font-size: 3vw;
     background-image:url("../img/Code.jpg") ;
     background-color: blue;
     color: white;
@@ -516,8 +323,8 @@ td {
     background-color: blue;
 }
 .precio td img{
-    width: 100px;
-    height: 100px;
+    width: 5vw;
+    height: 5vw;
 }
     /*Precio Cursos*/
 
@@ -536,11 +343,11 @@ td {
     margin-bottom: 40px;
 }
 .PF .preg h3{
-    font-size: 40px;
+    font-size: 4vw;
     color: crimson;
 }
 .PF .preg p{
-    font-size: 25px;
+    font-size: 2.5vw;
     color:teal;
 }
     /*Preguntas Frecuentes*/
@@ -560,9 +367,8 @@ td {
 .info h2{
     background-color: black;
     color:orange;
-    font-size: 50px;
+    font-size: 4vw;
     margin-bottom: 50px;
-    width: 1000px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -572,7 +378,7 @@ td {
     background-color: black;
     color:orange;
     text-align: center;
-    font-size: 25px;
+    font-size: 2vw;
     margin-bottom: 50px;
 }
     /*Sobre Nos*/
@@ -589,78 +395,68 @@ td {
     margin-left:15%;
 }
 
-#formu{
+.formu{
     display: grid;
     grid-template-columns: 3fr 3fr;
     grid-template-rows: 0.6fr 0.6fr 1.5fr 0.6fr 0.6fr 1.5fr 0.6fr 0.6fr 0.6fr 0.6fr;
-    gap: 20px;
+    gap: 1vw;
+    overflow-x: auto;
 }
 
-.contacto .textos{
-    font-size: 35px;    
+.contacto .textos{   
     grid-column: 1/2;
     justify-self: end;
 }
-.contacto .escrito{
-    font-size: 30px;
+
+
+.contacto input{
+    width: 30vw;
+    height: 1.5vw;
+    font-size: 1vw;
     grid-column: 2/3;
     justify-self: start;
 }
-
-.contacto .escrito2 input{
-    width: 40rem;    
-    transition: 1s;
-}
 .contacto .escrito3 input{
-    width: 10rem;
-    font-size: 30px;
-    transition: 1s;
-}
-.contacto input{
-    width: 25rem;
-    height: 3rem;
-    transition: 1s;
+    width: 20vw;
+    height: 2vw;
 }
 .contacto .escrito input:focus{
-    font-size: 30px;
-    width: 40rem;
     background-color: yellow;
+    transition: 1.5s;
 }
 
 
 .contacto label{
     background-color:chocolate;
-    font-size: 40px;
+    font-size: 1.5vw;
 }
-.contacto #pais{
+.contacto .pais{
     background-color:chocolate;
-    margin-right: 30px;
-    font-size: 40px;
+    margin-right: 1vw;
+    font-size: 2vw;
 }
-.contacto #mensajes{
-    font-size: 30px;
-    width: 30rem;
-    height: 5rem;
+.contacto .mensajes{
+    font-size: 1vw;
+    width: 30vw;
+    height: 5vw;
 }
-.contacto #mensajes:focus{
-    font-size: 30px;
-    width: 40rem;
-    height: 15rem;
+.contacto .mensajes:focus{
     transition: 1.5s;
     background-color:yellowgreen;
 }
-.contacto #Mapa{
-    width: 600px;
-    height: 200px;
+.contacto .Mapa{
+    width: 30vw ;
+    height: 7vw;
 }
-.contacto #adjunto{
+.contacto .adjunto{
     background-color:chocolate;
-    font-size: 40px;
+    font-size: 1vw;
 }
 
 .boton{
     grid-column: 1/3;
-    justify-self: center;
+    display: flex;
+    justify-items: center;
 }
 
 .bot{
@@ -668,98 +464,11 @@ td {
     margin-right: 10px;
     margin-top: 5px;
     margin-bottom: 3px;
-    font-size:30px;
     font-weight:bold;
     background-color:gold;
     border:5px black solid;
 }
     /*Contacto*/
-
-
-
-
-
-    /*Celular*/
-
-@media (max-width:425px) {
-    .contacto{
-        background-color:bisque;
-        border: 10px solid greenyellow;
-        font-family: 'Oswald', sans-serif;
-        height: 100%;
-        width: 425px;
-        padding: 0;
-        margin: 0;
-    }
-    
-    #formu{
-        display: grid;
-        grid-template-columns: 0.5fr 0.5fr;
-        grid-template-rows: 0.3fr 0.3fr 0.725fr 0.3fr 0.3fr 0.725fr 0.3fr 0.3fr 0.3fr 0.3fr;
-        gap: 5px;
-    }
-    
-    .contacto .textos{  
-        grid-column: 1/2;
-        justify-self: start;
-    }
-    .contacto .escrito{
-        grid-column: 2/3;
-    }
-    
-    .contacto .escrito2 input{
-        width: 18rem;
-        font-size: 15px;
-    }
-    .contacto .escrito3 input{
-        width: 6rem;
-        font-size: 15px;
-    }
-    .contacto input{
-        width: 15rem;
-        height: 3rem;
-    }
-    
-    
-    
-    .contacto label{
-        background-color:chocolate;
-        font-size: 20px;
-    }
-    .contacto #pais{
-        background-color:chocolate;
-        font-size: 20px;
-        margin-right: 30px;
-    }
-    .contacto #mensajes{
-        font-size: 20px;
-        width: 19rem;
-        height: 7.5rem;
-    }
-    .contacto #adjunto{
-        background-color:chocolate;
-        font-size: 20px;
-    }
-    
-    .boton{
-        grid-column: 1/3;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .bot{
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-top: 2.5px;
-        margin-bottom: 1.5px;
-        font-size: 15px;
-        font-weight:bold;
-        background-color:gold;
-        border:5px black solid;
-    }
-}
-    /*Celular*/
 
 
 
@@ -776,7 +485,7 @@ td {
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    font-size: 80px;
+    font-size: 5vw;
     text-align: center;
 }
 .footer p{
@@ -785,7 +494,7 @@ td {
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    font-size: 45px;
+    font-size: 3vw;
     text-align: center;
 }
 .footer .a1{
@@ -799,11 +508,423 @@ td {
 }
     /*Footer*/
 
+
+
+
+
+
+
+
+
     /*Celular*/
 
-
 @media (max-width:425px) {
+    /*Header*/
+    .header{
+        background-color:chocolate;
+        border: 10px solid chocolate ;
+        justify-content: space-between;
+        font-family: 'Oswald', sans-serif;
+        display: flex;
+    }
+    .header img{
+        width: 30vw;
+        height: 30vw;
+    }
+    .header .menu ul{
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .header .menu ul li a {
+        text-decoration: none;
+        color:black;
+        font-size: 4vw;
+    }
+    .header li{
+        display: inline;
+        padding: 1px 4px 1px 4px;
+        color: #666;
+        background-color: aqua;
+        border: 1px solid #ccc;
+        text-decoration: none;
+    }
+    /*Header*/
+     
+     
+     
+    /*Main*/
+    .main {
+        background-image: url("../img/Code.jpg");
+        background-size: cover;
+        background-color: #cccccc;
+        font-family: 'Oswald', sans-serif;
+    }
+    .main .titulo-principal{
+        color:red;
+        font-size: 10vw;
+        text-align: center;
+    } 
+    .main .texto-principal{
+        color: wheat;
+        text-align: center;
+        font-size: 7vw;
+        margin-bottom: 50xp;
+    }
+    /*Main*/
+     
 
+    /*Index*/
+    .find{
+        background-image: url("../img/index.jpg");
+        background-size:contain;
+        font-family: 'Oswald', sans-serif;
+        background-size:contain;
+    }
+    .main .htmlCss .titulo-principal{
+        color: brown;
+    }
+    .main .htmlCss{
+        background-image: url("../img/images.jpg");
+        background-size:contain;
+    }
+
+    .pag_p .principal{
+        margin: 0.2rem;
+        text-align: center;
+    }
+    .principal h2{
+        font-weight: bold; 
+        font-size: 9vw;
+        line-height: 3;
+        color: greenyellow;
+    }
+    .principal p{
+        font-weight:lighter; 
+        font-size: 5.5vw;
+        line-height: 1.5;
+    }
+    .principal .b{
+        font-size: 4vw;
+    }
+    ul{
+        display: block;
+        font-weight:lighter;
+        font-size: 4vw;
+        color: red;
+        text-decoration:underline;
+    }
+
+    .pag_p .secundario{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .secundario h3{
+        font-weight: bold; 
+        font-size: 5.5vw;
+        line-height: 2;
+        color: chartreuse;
+    }
+    .secundario p{
+        font-weight:lighter; 
+        font-size: 4.5vw;
+        line-height: 1.5;
+        text-decoration:underline;
+        color:bisque
+    }
+    .secundario iframe{
+        width: 100%;
+        height: 60vw;
+        border: 3px solid yellow;
+    }
+    /*Index*/     
+
+    /*programaEstudios*/
+    .SS{
+        border: 10px solid darkgreen;
+        background-color: slategrey;
+        font-family: 'Oswald', sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .SS .curso{
+        display: flex;
+        margin: 2vw;
+    }
+    .SS .curso .curso_info{
+        font-weight: bold;
+        font-size: 6vw;
+        color: red;
+        margin-right: 25px;
+        width: 50%;
+    }
+    .SS p{
+        color: black;
+        background-color: grey;
+        text-align: left;
+        font-size: 4vw;
+    }
+         
+    .SS .curso .curso_info2{
+        font-weight: bold;
+        font-size: 6vw;
+        color: red;
+        margin-left: 25px;
+        width: 50%;
+    }
+         
+    .imagen{
+        height: 30vw;
+        width: 30vw;
+    }
+         
+    .consid{
+        background-color: aquamarine;
+        border: 5px solid black;
+        font-family: 'Oswald', sans-serif;
+        height: 30%;
+    }
+         
+    .cuest{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+    }
+         
+    .consid h3{
+        color: black;
+        text-align: center;
+        font-size: 6vw;
+        margin-bottom: 10px;
+        background-color: gold;
+    }
+         
+    .consid .idiom{
+        background-color: brown;
+        font-size: 6vw;
+        width: 20vw;
+        height: 50vw;
+        grid-column: 1/2;
+        margin-left: 10px;
+    }
+    .consid input{
+        font-size: 3vw;
+        width: 55vw;
+        height: 50vw;
+    }
+         
+    .consid .curs{
+        background-color: brown;
+        font-size: 6vw;
+        margin-right: 3rem;
+        width: 20vw;
+        height: 50vw;
+        grid-column: 1/2;
+        margin-left: 10px;
+    }
+    .consid textarea{
+        font-size: 3vw;
+        width: 55vw;
+        height: 50vw;
+    }
+    .BT{
+        display: flex;
+        justify-content: center;
+    }
+    .BT .BT_1{
+        margin: 5px;
+    }
+    .BT .botones input{
+        font-size: 5vw;
+        font-weight:bold;
+        color:white;
+        background:goldenrod;
+        border:0rem;
+        width:auto;
+        height:auto;
+    }
+    /*programaEstudios*/
+
+
+    /*Precio Cursos*/
+    .pagpre{
+        background-color: yellow;
+        font-family: 'Oswald', sans-serif;
+        overflow-x: auto;
+    }
+    .precio{
+        overflow-x: auto;
+    }
+    .precio table {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-collapse : separate;
+        empty-cells : hide;
+        border: black solid 5px;
+        border-spacing: 0.8rem 0.5rem;
+        caption-side: bottom;
+        font-size: 4.2vw;
+        background-image:url("../img/Code.jpg") ;
+        background-color: blue;
+        color: white;
+    }
+    td {
+        padding : 1px;
+        border-style : solid;
+        border-color : #999999;
+        border: crimson solid 5px;
+        background-color: blue;
+    }
+    .precio td img{
+        width: 12vw;
+        height: 12vw;
+    }
+    /*Precio Cursos*/   
+   
+     
+    /*Preguntas Frecuentes*/
+    .PF{
+        border: 10px solid yellow;
+        background-image: url("../img/duda.png");
+        background-size:contain ;
+        margin-bottom: 3rem;
+        font-family: 'Oswald', sans-serif;
+    }    
+    .PF div{
+        text-align: center;
+        margin-bottom: 1vw;
+    }
+    .PF .preg h3{
+        font-size: 6vw;
+        color: crimson;
+    }
+    .PF .preg p{
+        font-size: 5vw;
+        color:teal;
+    }
+    /*Preguntas Frecuentes*/
+    
+    
+    
+    /*Sobre Nos*/
+    .FSN{
+        background-image: url("../img/programacion.jpg");
+        font-family: 'Oswald', sans-serif;
+    }
+    .info{
+        background-size: cover;
+        margin-bottom: 2rem;
+    }
+    .info h2{
+        background-color: black;
+        color:orange;
+        margin-bottom: 2rem;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 8vw;
+    }
+    .info p{
+        background-color: black;
+        color:orange;
+        text-align: center;
+        font-size: 6vw;
+        margin-bottom: 50px;
+    }
+    /*Sobre Nos*/
+         
+     
+     
+     
+    /*Contacto*/
+    .contacto{
+        background-color:bisque;
+        border: 10px solid greenyellow;
+        font-family: 'Oswald', sans-serif;
+        height: 100%;
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+         
+    .formu{
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-rows: 0.3fr 0.3fr 0.725fr 0.3fr 0.3fr 0.725fr 0.3fr 0.3fr 0.3fr 0.3fr;
+        gap: 1vw;
+    }
+         
+    .contacto .textos{
+        font-size: 2vw;
+        grid-column: 1/2;
+        justify-self: start;
+    }
+
+    .contacto input{
+        font-size: 4vw;
+        width: 70vw;
+        height: 6vw;
+    }
+    .contacto .escrito3 input{
+        width: 10vw;
+    }     
+         
+         
+    .contacto label{
+        background-color:chocolate;
+        font-size: 5vw;
+    }
+    .contacto .pais{
+        background-color:chocolate;
+        font-size: 5vw;
+    }
+    .contacto .mensajes{
+        font-size: 4vw;
+        width: 70vw;
+        height: 24vw;
+    }
+    .contacto .mensajes:focus{
+        transition: 1.5s;
+        background-color:yellowgreen;
+    }
+    .contacto .Mapa{
+        margin-top: 5px;
+        width: 70vw;
+        height: 24vw;
+    }
+    .contacto .adjunto{
+        background-color:chocolate;
+        font-size: 3vw;
+    }
+         
+    .boton{
+        display:grid;
+        grid-column: 1/3;    
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+         
+    .bot{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 2.5px;
+        margin-bottom: 1.5px;
+        font-size: 1rem;
+        font-weight:bold;
+        background-color:gold;
+        border:1px black solid;
+    }
+    /*Contacto*/
+     
+    /*Footer*/
     .footer{
         background-image:url("../img/Code.jpg");
         background-size: cover;
@@ -816,7 +937,7 @@ td {
         animation-duration: 3s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
-        font-size: 2rem;
+        font-size: 8vw;
         text-align: center;
     }
     .footer p{
@@ -825,7 +946,7 @@ td {
         animation-duration: 3s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
-        font-size: 1.5rem;
+        font-size: 6vw;
         text-align: center;
     }
     .footer .a1{
@@ -837,7 +958,8 @@ td {
         width: 100%;
         height: 100%;
     }
-
+     
+    /*Footer*/
 }
-
-    /*Celular*/
+     
+    /*Celular/
