@@ -188,6 +188,15 @@ body{
         animation-iteration-count: infinite;
     }
 }
+.cuest{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    overflow-x: auto;
+}
 .consid{
     background-color: aquamarine;
     border: 40px solid black;
@@ -232,15 +241,6 @@ body{
         width: 20vw;
         height: 4vw;
     }
-}
-.cuest{
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 15px;
-    overflow-x: auto;
 }
 .BT{
     display: flex;

@@ -195,6 +195,14 @@
             animation-iteration-count:unset;
         }
     }
+    .cuest{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+    }
     .consid{
         background-color: aquamarine;
         border: 5px solid black;
@@ -235,14 +243,6 @@
             width: 55vw;
             height: 50vw;
         }
-    }
-    .cuest{
-        display: grid;
-        gap: 20px;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr 1fr;
-        grid-column-gap: 10px;
-        grid-row-gap: 15px;
     }
     .BT{
         display: flex;
