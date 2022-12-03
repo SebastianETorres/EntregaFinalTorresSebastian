@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import "_vars";
+@import "_header";
+@import "_keyframes";
+
+
+body{
+    animation: ef-pe;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: initial;
+}
+
+.main{
+    background-image: url("../img/Code.jpg");
+    background-size: cover;
+    background-color: #cccccc;
+    font-family: $fuente;
+
+
+    
+    .titulo-principal{
+        @include principal;
+    }
+    .titulo-principal1{
+        @include principal;
+    }
+    .titulo-principal2{
+        @include principal;
+    }
+    .titulo-principal3{
+        @include principal;
+    }
+    .titulo-principal4{
+        @include principal;
+    }
+    .titulo-principal5{
+        @include principal;
+    }
+    
+    .texto-principal{
+        color: wheat;
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+}
+
+    /*Index*/
+.find{
+    background-image: url("../img/index.jpg");
+    background-size:contain;
+    font-family: $fuente;
+    background-size:contain;
+}
+.main .htmlCss{
+    background-image: url("../img/images.jpg");
+    background-size:contain;
+
+    .titulo-principal{
+        color: $marron;
+    }
+}
+.pag_p{
+
+    .principal{
+        margin: 1rem;
+        text-align: center;
+
+        h2{
+            font-weight: bold; 
+            font-size: 5vw;
+            line-height: 3;
+            color: greenyellow;
+        }
+
+        p{
+            font-weight:lighter; 
+            font-size: 3vw;
+            line-height: 1.5;
+        }
+
+        .b{
+            font-size: 2vw;
+        }
+
+        ul{
+            display: block;
+            font-weight:lighter;
+            font-size: 2.5vw;
+            color: $rojo;
+            text-decoration:underline;
+        }
+    }
+
+    .secundario{
+        margin-bottom: 1rem;
+        text-align: center;
+
+        h3{
+            font-weight: bold; 
+            font-size: 4vw;
+            line-height: 2;
+            color: chartreuse;
+        }
+
+        p{
+            font-weight:lighter; 
+            font-size: 2.5vw;
+            line-height: 1.5;
+            text-decoration:underline;
+            color:bisque
+        }
+
+        iframe{
+            width: 75%;
+            height: 40vw;
+            border: 10px solid yellow;
+        }
+    }
+}
+    /*Index*/
+
+
+
+    /*programaEstudios*/
+.SS{
+    border: 10px solid darkgreen;
+    background-color: slategrey;
+    font-family: $fuente;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .curso{
+        display: flex;
+        margin: 25px;
+
+        .curso_info{
+            font-weight: bold;
+            font-size: 1.5vw;
+            color: $rojo;
+            margin-right: 25px;
+            width: 50%;
+
+            p:hover{
+                animation: ef-grad;
+                animation-delay: 0s;
+                animation-duration: 3s;
+                animation-iteration-count:inherit;
+            }
+        }
+
+        .curso_info2{
+            font-weight: bold;
+            font-size: 1.5vw;
+            color: $rojo;
+            margin-left: 25px;
+            width: 50%;
+
+            p:hover{
+                animation: ef-grad;
+                animation-delay: 0s;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+
+    p{
+        color: black;
+        text-align: left;
+    }
+}
+.imagen{
+    height: 10vw;
+    width: 10vw;
+
+    &:hover{
+        animation: ef-hw;
+        animation-delay: 0s;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+    }
+}
+.consid{
+    background-color: aquamarine;
+    border: 40px solid black;
+    font-family: $fuente;
+    height: 30%;
+
+    h3{
+        color: black;
+        text-align: center;
+        font-size: 2vw;
+        margin-bottom: 25px;
+        background-color: gold;
+    }
+
+    .idiom{
+        background-color: $marron;
+        font-size: 1vw;
+        margin-right: 3vw;
+        width: 20vw;
+        height: 2vw;
+        grid-column: 2/3;
+    }
+
+    input{
+        font-size: 1vw;
+        width: 20vw;
+        height: 2vw;
+    }
+
+    .curs{
+        background-color: $marron;
+        font-size: 1vw;
+        margin-right: 3vw;
+        width: 20vw;
+        height: 2vw;
+        grid-column: 2/3;
+        
+    }
+
+    textarea{
+        font-size: 1vw;
+        width: 20vw;
+        height: 4vw;
+    }
+}
+.cuest{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    overflow-x: auto;
+}
+.BT{
+    display: flex;
+    justify-content: center;
+
+    .BT_1{
+        margin: 5px;
+    }
+
+    .botones input{
+        font-weight:bold;
+        color:white;
+        background:goldenrod;
+        border:0rem;
+        width:auto;
+        height:auto;
+    }
+}
+    /*Programa Estudios*/  
+
+
+
+    /*Precio Cursos*/
+.pagpre{
+    background-color: yellow;
+    font-family: $fuente;
+}
+.precio{
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+
+    table {
+        line-height:2 ;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width : 30vw;
+        border-collapse : separate;
+        empty-cells : hide;
+        border: black solid 10px;
+        text-align: center;
+        border-spacing: 40px 5px;
+        caption-side: bottom;
+        font-size: 3vw;
+        background-image:url("../img/Code.jpg") ;
+        background-color: blue;
+        color: white;
+    }
+
+    td img{
+        width: 5vw;
+        height: 5vw;
+    }
+}
+td {
+    padding : 20px;
+    border-style : solid;
+    border-width : 2px;
+    border-color : #999999;
+    border: crimson solid 5px;
+    background-color: blue;
+}
+    /*Precio Cursos*/
+
+
+
+    /*Preguntas Frecuentes*/
+.PF{
+    border: 20px solid yellow;
+    background-image: url("../img/duda.png");
+    background-size: cover;
+    margin-bottom: 50px;
+    font-family: $fuente;
+
+    div{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .preg{
+        h3{
+            font-size: 4vw;
+            color: crimson;
+        }
+
+        p{
+            font-size: 2.5vw;
+            color:teal;
+        }
+    }
+}
+    /*Preguntas Frecuentes*/
+
+
+
+    /*Sobre Nos*/
+.FSN{
+    background-image: url("../img/programacion.jpg");
+    background-size:100%;
+    font-family: $fuente;
+}
+.info{
+    background-size: cover;
+    margin-bottom: 50px;
+
+    h2{
+        background-color: black;
+        color:orange;
+        font-size: 4vw;
+        margin-bottom: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    p{
+        background-color: black;
+        color:orange;
+        text-align: center;
+        font-size: 2vw;
+        margin-bottom: 50px;
+    }
+}
+    /*Sobre Nos*/
+
+
+
+    /*Contacto*/
+.formu{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 0.6fr 0.6fr 1.5fr 0.6fr 0.6fr 1.5fr 0.6fr 0.6fr 0.6fr 0.6fr;
+    gap: 1vw;
+    overflow-x: auto;
+}
+.contacto{
+    background-color:bisque;
+    border: 10px solid greenyellow;
+    font-family: $fuente;
+    height: 90%;
+    width: 70%;
+    margin-left:15%;
+
+    .textos{   
+        grid-column: 1/2;
+        justify-self: end;
+    }
+
+    input{
+        width: 30vw;
+        height: 1.5vw;
+        font-size: 1vw;
+        grid-column: 2/3;
+        justify-self: start;
+    }
+
+    .escrito3 input{
+        width: 20vw;
+        height: 2vw;
+    }
+
+    .escrito input:focus{
+        background-color: yellow;
+        transition: 1.5s;
+    }
+
+    label{
+        background-color:$chocolate;
+        font-size: 1.5vw;
+    }
+
+    .pais{
+        background-color:$chocolate;
+        margin-right: 1vw;
+        font-size: 2vw;
+    }
+
+    .mensajes{
+        font-size: 1vw;
+        width: 30vw;
+        height: 5vw;
+    
+        &:focus{
+            transition: 1.5s;
+            background-color:yellowgreen;
+        }
+    }
+
+    .Mapa{
+        width: 30vw ;
+        height: 7vw;
+    }
+
+    .adjunto{
+        background-color:$chocolate;
+        font-size: 1vw;
+    }
+}
+.boton{
+    grid-column: 1/3;
+    display: flex;
+    justify-items: center;
+}
+.bot{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    font-weight:bold;
+    background-color:gold;
+    border:5px black solid;
+}
+    /*Contacto*/
+
+
+@import "_responsive";
+@import "_footer";
+

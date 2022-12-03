@@ -1,0 +1,108 @@
+@keyframes ef-fo {
+    0%{
+        background-color: gray;
+    }
+    20%{
+        background-color:azure;
+    }
+    40%{
+        background-color:bisque;
+    }
+    60%{
+        background-color:burlywood;
+    }
+    80%{
+        background-color:darkseagreen;
+    }
+    100%{
+        background-color:lightslategrey;
+    }
+}
+
+@keyframes ef-he {
+    0%{
+        background-color: chocolate;
+    }
+    20%{
+        background-color:coral;
+    }
+    40%{
+        background-color:gold;
+    }
+    60%{
+        background-color:yellow;
+    }
+    80%{
+        background-color:goldenrod;
+    }
+    90%{
+        background-color:goldenrod;
+    }
+    100%{
+        background-color:chocolate;
+    }
+}
+
+@keyframes ef-pe{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes ef-hw{
+    0%{
+        width: 10vw;
+        height: 10vw;
+    }
+    50%{
+        width: 5vw;
+        height: 5vw;
+    }
+    100%{
+        width: 10vw;
+        height: 10vw;
+    }
+}
+
+@keyframes ef-hw-c{
+    0%{
+        width: 30vw;
+        height: 30vw;
+    }
+    40%{
+        width: 0vw;
+        height: 0vw;
+    }
+    60%{
+        width: 40vw;
+        height: 40vw;
+    }
+    100%{
+        width: 30vw;
+        height: 30vw;
+    }
+}
+
+@keyframes ef-grad{
+    100%{
+        background-image: linear-gradient(to right, greenyellow ,rgba(173, 255, 47, 0.374));
+    }
+    80%{
+        background-image: linear-gradient(to right, greenyellow , rgba(173, 255, 47, 0.374));
+    }
+    60%{
+        background-image: linear-gradient(to right, greenyellow , rgba(173, 255, 47, 0.374), rgb(173, 255, 47, 0.574));
+    }
+    40%{
+        background-image: linear-gradient(to right, greenyellow , rgba(173, 255, 47, 0.374), rgb(173, 255, 47, 0.574), rgb(173, 255, 47, 0.774));
+    }
+    20%{
+        background-image: linear-gradient(to right, greenyellow, rgba(173, 255, 47, 0.374), rgb(173, 255, 47, 0.574), rgb(173, 255, 47, 0.774), rgb(173, 255, 47, 0.974));
+    }
+    0%{
+        background-image: linear-gradient(to right, greenyellow , rgba(173, 255, 47, 0.374), rgb(173, 255, 47, 0.574), rgb(173, 255, 47, 0.774), rgb(173, 255, 47, 0.974),rgb(173, 255, 47, 1) );
+    }
+}

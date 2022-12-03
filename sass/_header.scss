@@ -1,0 +1,40 @@
+@import "_vars";
+.header{
+    animation: ef-he;
+    animation-delay: 0s;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    border: 20px solid $chocolate ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: $fuente;
+
+    img{
+        width: 50%;
+        height: 50%;
+    }
+
+    .menu ul{
+        text-decoration: none;
+        
+        li a{
+            text-decoration: none;
+            color:black;
+        }
+    }
+    li{
+        font-size: 200%;
+        display: inline;
+        margin: 0 10px 0 0;
+        padding: 2px 7px 2px 7px;
+        color: #666;
+        background-color: aqua;
+        border: 1px solid #ccc;
+
+        &:hover{
+            background-color: white;
+        }
+    }
+}

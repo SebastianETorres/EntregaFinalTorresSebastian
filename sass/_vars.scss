@@ -1,0 +1,10 @@
+$fuente: 'Oswald', sans-serif;
+$rojo: red;
+$marron: brown;
+$chocolate: chocolate;
+
+@mixin principal {
+    color: $rojo;
+    font-size: 5vw;
+    text-align: center;
+}

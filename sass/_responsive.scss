@@ -1,0 +1,472 @@
+    /*Celular*/
+@import "_vars";
+@media (max-width:425px) {
+/*Header*/
+.header{
+    background-color:$chocolate;
+    border: 10px solid $chocolate ;
+    justify-content: space-between;
+    font-family: $fuente;
+    display: flex;
+
+    img{
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .menu ul{
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        li a {
+            text-decoration: none;
+            color:black;
+            font-size: 4vw;
+        }
+    }
+   
+    li{
+        display: inline;
+        padding: 1px 4px 1px 4px;
+        color: #666;
+        background-color: aqua;
+        border: 1px solid #ccc;
+        text-decoration: none;
+    }
+}
+/*Header*/
+
+/*Main*/
+.main {
+    background-image: url("../img/Code.jpg");
+    background-size: cover;
+    background-color: #cccccc;
+    font-family: $fuente;
+
+    .titulo-principal{
+        @include principal;
+    }
+    .titulo-principal1{
+        @include principal;
+    }
+    .titulo-principal2{
+        @include principal;
+    }
+    .titulo-principal3{
+        @include principal;
+    }
+    .titulo-principal4{
+        @include principal;
+    }
+    .titulo-principal5{
+        @include principal;
+    }
+
+    .texto-principal{
+        color: wheat;
+        text-align: center;
+        font-size: 7vw;
+        margin-bottom: 50xp;
+    }
+}
+/*Main*/
+
+/*Index*/
+.find{
+    background-image: url("../img/index.jpg");
+    background-size:contain;
+    font-family: $fuente;
+    background-size:contain;
+}
+
+.main .htmlCss{
+    background-image: url("../img/images.jpg");
+    background-size:contain;
+
+    .titulo-principal{
+        color: $marron;
+    }
+}
+
+.pag_p{ 
+    .principal{
+        margin: 0.2rem;
+        text-align: center;
+
+        h2{
+            font-weight: bold; 
+            font-size: 9vw;
+            line-height: 3;
+            color: greenyellow;
+        }
+
+        p{
+            font-weight:lighter; 
+            font-size: 5.5vw;
+            line-height: 1.5;
+        }
+
+        .b{
+            font-size: 4vw;
+        }
+    }
+    ul{
+    display: block;
+    font-weight:lighter;
+    font-size: 4vw;
+    color: $rojo;
+    text-decoration:underline;
+    }
+    .secundario{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+
+        h3{
+            font-weight: bold; 
+            font-size: 5.5vw;
+            line-height: 2;
+            color: chartreuse;
+        }
+
+        p{
+            font-weight:lighter; 
+            font-size: 4.5vw;
+            line-height: 1.5;
+            text-decoration:underline;
+            color:bisque
+        }
+
+        iframe{
+            width: 100%;
+            height: 60vw;
+            border: 3px solid yellow;
+        }
+    }
+}
+/*Index*/
+
+/*programaEstudios*/
+.SS{
+    border: 10px solid darkgreen;
+    background-color: slategrey;
+    font-family: $fuente;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .curso{
+        display: flex;
+        margin: 2vw;
+
+        .curso_info{
+            font-weight: bold;
+            font-size: 6vw;
+            color: $rojo;
+            margin-right: 10px;
+            width: 50%;
+        }
+
+        .curso_info2{
+            font-weight: bold;
+            font-size: 6vw;
+            color: $rojo;
+            margin-left: 10px;
+            width: 50%;
+        }
+    }
+
+    p{
+        color: black;
+        background-color: grey;
+        text-align: left;
+        font-size: 4vw;
+    }
+    .imagen{
+        height: 30vw;
+        width: 30vw;
+
+        &:hover{
+            animation: ef-hw-c;
+            animation-delay: 0s;
+            animation-duration: 2s;
+            animation-iteration-count:unset;
+        }
+    }
+    .consid{
+        background-color: aquamarine;
+        border: 5px solid black;
+        font-family: $fuente;
+        height: 30%;
+
+        h3{
+            color: black;
+            text-align: center;
+            font-size: 6vw;
+            margin-bottom: 10px;
+            background-color: gold;
+        }
+        .idiom{
+            background-color: $marron;
+            font-size: 6vw;
+            width: 20vw;
+            height: 50vw;
+            grid-column: 1/2;
+            margin-left: 10px;
+        }
+        input{
+            font-size: 3vw;
+            width: 55vw;
+            height: 50vw;
+        }
+        .curs{
+            background-color: $marron;
+            font-size: 6vw;
+            margin-right: 3rem;
+            width: 20vw;
+            height: 50vw;
+            grid-column: 1/2;
+            margin-left: 10px;
+        }
+        textarea{
+            font-size: 3vw;
+            width: 55vw;
+            height: 50vw;
+        }
+    }
+    .cuest{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+    }
+    .BT{
+        display: flex;
+        justify-content: center;
+
+        .BT_1{
+            margin: 5px;
+        }
+        .botones input{
+            font-size: 5vw;
+            font-weight:bold;
+            color:white;
+            background:goldenrod;
+            border:0rem;
+            width:auto;
+            height:auto;
+        }
+    }
+}
+/*programaEstudios*/
+
+/*Precio Cursos*/
+.pagpre{
+    background-color: yellow;
+    font-family: $fuente;
+    overflow-x: auto;
+}
+.precio{
+    overflow-x: auto;
+
+    table {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-collapse : separate;
+        empty-cells : hide;
+        border: black solid 5px;
+        border-spacing: 0.8rem 0.5rem;
+        caption-side: bottom;
+        font-size: 4.2vw;
+        background-image:url("../img/Code.jpg") ;
+        background-color: blue;
+        color: white;
+    }
+    td img{
+        width: 12vw;
+        height: 12vw;
+    }
+}
+td {
+    padding : 1px;
+    border-style : solid;
+    border-color : #999999;
+    border: crimson solid 5px;
+    background-color: blue;
+}
+/*Precio Cursos*/
+
+/*Preguntas Frecuentes*/
+.PF{
+    border: 10px solid yellow;
+    background-image: url("../img/duda.png");
+    background-size:contain ;
+    margin-bottom: 3rem;
+    font-family: $fuente;
+
+    div{
+        text-align: center;
+        margin-bottom: 1vw;
+    }
+    .preg{
+        h3{
+            font-size: 6vw;
+            color: crimson;
+        }
+        p{
+            font-size: 5vw;
+            color:teal;
+        }
+    }
+}
+/*Preguntas Frecuentes*/
+
+/*Sobre Nos*/
+.FSN{
+    background-image: url("../img/programacion.jpg");
+    font-family: $fuente;
+}
+.info{
+    background-size: cover;
+    margin-bottom: 2rem;
+
+    h2{
+        background-color: black;
+        color:orange;
+        margin-bottom: 2rem;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 8vw;
+    }
+
+    p{
+        background-color: black;
+        color:orange;
+        text-align: center;
+        font-size: 6vw;
+        margin-bottom: 50px;
+    }
+}
+/*Sobre Nos*/
+
+/*Contacto*/
+.formu{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.3fr 0.3fr 0.725fr 0.3fr 0.3fr 0.725fr 0.3fr 0.3fr 0.3fr 0.3fr;
+    gap: 1vw;
+}
+.contacto{
+    background-color:bisque;
+    border: 10px solid greenyellow;
+    font-family: $fuente;
+    height: 100%;
+    width: auto;
+    padding: 0;
+    margin: 0;
+
+    .textos{
+        font-size: 2vw;
+        grid-column: 1/2;
+        justify-self: start;
+    }
+    input{
+        font-size: 4vw;
+        width: 70vw;
+        height: 6vw;
+    }
+    .escrito3 input{
+        width: 10vw;
+    }
+    label{
+        background-color:$chocolate;
+        font-size: 5vw;
+    }
+    .pais{
+        background-color:$chocolate;
+        font-size: 5vw;
+    }
+    .mensajes{
+        font-size: 4vw;
+        width: 70vw;
+        height: 24vw;
+
+        &:focus{
+            transition: 1.5s;
+            background-color:yellowgreen;
+        }
+    }
+    .Mapa{
+        margin-top: 5px;
+        width: 70vw;
+        height: 24vw;
+    }
+    .adjunto{
+        background-color:$chocolate;
+        font-size: 3vw;
+    }
+}
+.boton{
+    display:grid;
+    grid-column: 1/3;    
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.bot{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 2.5px;
+    margin-bottom: 1.5px;
+    font-size: 1rem;
+    font-weight:bold;
+    background-color:gold;
+    border:1px black solid;
+}
+/*Contacto*/
+
+/*Footer*/
+.footer{
+    background-image:url("../img/Code.jpg");
+    background-size: cover;
+    background-color: #cccccc;
+    font-family: $fuente;
+
+    h2{
+        animation: ef-fo;
+        animation-delay: 0s;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        font-size: 8vw;
+        text-align: center;
+    }
+    p{
+        animation: ef-fo;
+        animation-delay: 0s;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        font-size: 6vw;
+        text-align: center;
+    }
+    .a1{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+/*Footer*/
+}
+
+    /*Celular*/

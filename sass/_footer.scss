@@ -1,0 +1,40 @@
+   /*Footer*/
+@import "_vars";
+.footer{
+    background-image:url("../img/Code.jpg");
+    background-size: cover;
+    background-color: #cccccc;
+    font-family: $fuente;
+
+    h2{
+        animation: ef-fo;
+        animation-delay: 0s;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    p{
+        animation: ef-fo;
+        animation-delay: 0s;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .a1{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+   /*Footer*/
