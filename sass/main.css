@@ -440,6 +440,16 @@ body {
           animation-iteration-count: infinite;
 }
 
+.cuest {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  overflow-x: auto;
+}
+
 .consid {
   background-color: aquamarine;
   border: 40px solid black;
@@ -478,16 +488,6 @@ body {
   font-size: 1vw;
   width: 20vw;
   height: 4vw;
-}
-
-.cuest {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 3fr 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 15px;
-  overflow-x: auto;
 }
 
 .BT {
@@ -657,7 +657,7 @@ td {
 }
 .contacto .Mapa {
   width: 30vw;
-  height: 7vw;
+  height: 15vw;
 }
 .contacto .adjunto {
   background-color: chocolate;
@@ -681,6 +681,52 @@ td {
 }
 
 /*Contacto*/
+/*Footer*/
+.footer {
+  background-image: url("../img/Code.jpg");
+  background-size: cover;
+  background-color: #cccccc;
+  font-family: "Oswald", sans-serif;
+}
+.footer h2 {
+  -webkit-animation: ef-fo;
+          animation: ef-fo;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  font-size: 5vw;
+  text-align: center;
+}
+.footer p {
+  -webkit-animation: ef-fo;
+          animation: ef-fo;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  font-size: 3vw;
+  text-align: center;
+}
+.footer .a1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer img {
+  width: 100%;
+  height: 100%;
+}
+
+/*Footer*/
 /*Celular*/
 @media (max-width: 425px) {
   /*Header*/
@@ -807,14 +853,14 @@ td {
     font-weight: bold;
     font-size: 5.5vw;
     line-height: 2;
-    color: chartreuse;
+    color: darkorange;
   }
   .pag_p .secundario p {
     font-weight: lighter;
     font-size: 4.5vw;
     line-height: 1.5;
     text-decoration: underline;
-    color: bisque;
+    color: yellow;
   }
   .pag_p .secundario iframe {
     width: 100%;
@@ -855,11 +901,13 @@ td {
     text-align: left;
     font-size: 4vw;
   }
-  .SS .imagen {
+  .imagen {
     height: 30vw;
     width: 30vw;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
-  .SS .imagen:hover {
+  .imagen:hover {
     -webkit-animation: ef-hw-c;
             animation: ef-hw-c;
     -webkit-animation-delay: 0s;
@@ -869,47 +917,7 @@ td {
     -webkit-animation-iteration-count: unset;
             animation-iteration-count: unset;
   }
-  .SS .consid {
-    background-color: aquamarine;
-    border: 5px solid black;
-    font-family: "Oswald", sans-serif;
-    height: 30%;
-  }
-  .SS .consid h3 {
-    color: black;
-    text-align: center;
-    font-size: 6vw;
-    margin-bottom: 10px;
-    background-color: gold;
-  }
-  .SS .consid .idiom {
-    background-color: brown;
-    font-size: 6vw;
-    width: 20vw;
-    height: 50vw;
-    grid-column: 1/2;
-    margin-left: 10px;
-  }
-  .SS .consid input {
-    font-size: 3vw;
-    width: 55vw;
-    height: 50vw;
-  }
-  .SS .consid .curs {
-    background-color: brown;
-    font-size: 6vw;
-    margin-right: 3rem;
-    width: 20vw;
-    height: 50vw;
-    grid-column: 1/2;
-    margin-left: 10px;
-  }
-  .SS .consid textarea {
-    font-size: 3vw;
-    width: 55vw;
-    height: 50vw;
-  }
-  .SS .cuest {
+  .cuest {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -917,14 +925,54 @@ td {
     grid-column-gap: 10px;
     grid-row-gap: 15px;
   }
-  .SS .BT {
+  .consid {
+    background-color: aquamarine;
+    border: 5px solid black;
+    font-family: "Oswald", sans-serif;
+    height: 30%;
+  }
+  .consid h3 {
+    color: black;
+    text-align: center;
+    font-size: 7vw;
+    margin-bottom: 10px;
+    background-color: gold;
+  }
+  .consid .idiom {
+    background-color: brown;
+    font-size: 5vw;
+    width: 20vw;
+    height: 50vw;
+    grid-column: 1/2;
+    margin-left: 10px;
+  }
+  .consid input {
+    font-size: 3vw;
+    width: 55vw;
+    height: 50vw;
+  }
+  .consid .curs {
+    background-color: brown;
+    font-size: 5vw;
+    margin-right: 3rem;
+    width: 20vw;
+    height: 50vw;
+    grid-column: 1/2;
+    margin-left: 10px;
+  }
+  .consid textarea {
+    font-size: 3vw;
+    width: 55vw;
+    height: 50vw;
+  }
+  .BT {
     display: flex;
     justify-content: center;
   }
-  .SS .BT .BT_1 {
+  .BT .BT_1 {
     margin: 5px;
   }
-  .SS .BT .botones input {
+  .BT .botones input {
     font-size: 5vw;
     font-weight: bold;
     color: white;
@@ -986,7 +1034,7 @@ td {
   }
   .PF .preg p {
     font-size: 5vw;
-    color: teal;
+    color: mediumblue;
   }
   /*Preguntas Frecuentes*/
   /*Sobre Nos*/
@@ -1066,7 +1114,7 @@ td {
   .contacto .Mapa {
     margin-top: 5px;
     width: 70vw;
-    height: 24vw;
+    height: 70vw;
   }
   .contacto .adjunto {
     background-color: chocolate;
@@ -1135,50 +1183,4 @@ td {
   }
   /*Footer*/
 }
-/*Celular*/
-/*Footer*/
-.footer {
-  background-image: url("../img/Code.jpg");
-  background-size: cover;
-  background-color: #cccccc;
-  font-family: "Oswald", sans-serif;
-}
-.footer h2 {
-  -webkit-animation: ef-fo;
-          animation: ef-fo;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  font-size: 5vw;
-  text-align: center;
-}
-.footer p {
-  -webkit-animation: ef-fo;
-          animation: ef-fo;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  font-size: 3vw;
-  text-align: center;
-}
-.footer .a1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.footer img {
-  width: 100%;
-  height: 100%;
-}
-
-/*Footer*//*# sourceMappingURL=main.css.map */
+/*Celular*//*# sourceMappingURL=main.css.map */

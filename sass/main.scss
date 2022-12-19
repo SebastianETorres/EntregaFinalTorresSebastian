@@ -8,6 +8,7 @@
 @import "_keyframes";
 
 
+
 body{
     animation: ef-pe;
     animation-delay: 0s;
@@ -432,7 +433,7 @@ td {
 
     .Mapa{
         width: 30vw ;
-        height: 7vw;
+        height: 15vw;
     }
 
     .adjunto{
@@ -456,7 +457,10 @@ td {
 }
     /*Contacto*/
 
+@import "_footer";
+
+
 
 @import "_responsive";
-@import "_footer";
+
 

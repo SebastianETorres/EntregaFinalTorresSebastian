@@ -113,11 +113,11 @@
         }
     }
     ul{
-    display: block;
-    font-weight:lighter;
-    font-size: 4vw;
-    color: $rojo;
-    text-decoration:underline;
+        display: block;
+        font-weight:lighter;
+        font-size: 4vw;
+        color: $rojo;
+        text-decoration:underline;
     }
     .secundario{
         margin-top: 50px;
@@ -128,7 +128,7 @@
             font-weight: bold; 
             font-size: 5.5vw;
             line-height: 2;
-            color: chartreuse;
+            color:darkorange;
         }
 
         p{
@@ -136,7 +136,7 @@
             font-size: 4.5vw;
             line-height: 1.5;
             text-decoration:underline;
-            color:bisque
+            color:yellow;
         }
 
         iframe{
@@ -184,84 +184,86 @@
         text-align: left;
         font-size: 4vw;
     }
-    .imagen{
-        height: 30vw;
-        width: 30vw;
+}
+.imagen{
+    height: 30vw;
+    width: 30vw;
+    object-fit: contain;
 
-        &:hover{
-            animation: ef-hw-c;
-            animation-delay: 0s;
-            animation-duration: 2s;
-            animation-iteration-count:unset;
-        }
-    }
-    .cuest{
-        display: grid;
-        gap: 20px;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr 1fr;
-        grid-column-gap: 10px;
-        grid-row-gap: 15px;
-    }
-    .consid{
-        background-color: aquamarine;
-        border: 5px solid black;
-        font-family: $fuente;
-        height: 30%;
-
-        h3{
-            color: black;
-            text-align: center;
-            font-size: 6vw;
-            margin-bottom: 10px;
-            background-color: gold;
-        }
-        .idiom{
-            background-color: $marron;
-            font-size: 6vw;
-            width: 20vw;
-            height: 50vw;
-            grid-column: 1/2;
-            margin-left: 10px;
-        }
-        input{
-            font-size: 3vw;
-            width: 55vw;
-            height: 50vw;
-        }
-        .curs{
-            background-color: $marron;
-            font-size: 6vw;
-            margin-right: 3rem;
-            width: 20vw;
-            height: 50vw;
-            grid-column: 1/2;
-            margin-left: 10px;
-        }
-        textarea{
-            font-size: 3vw;
-            width: 55vw;
-            height: 50vw;
-        }
-    }
-    .BT{
-        display: flex;
-        justify-content: center;
-
-        .BT_1{
-            margin: 5px;
-        }
-        .botones input{
-            font-size: 5vw;
-            font-weight:bold;
-            color:white;
-            background:goldenrod;
-            border:0rem;
-            width:auto;
-            height:auto;
-        }
+    &:hover{
+        animation: ef-hw-c;
+        animation-delay: 0s;
+        animation-duration: 2s;
+        animation-iteration-count:unset;
     }
 }
+.cuest{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+}
+.consid{
+    background-color: aquamarine;
+    border: 5px solid black;
+    font-family: $fuente;
+    height: 30%;
+
+    h3{
+        color: black;
+        text-align: center;
+        font-size: 7vw;
+        margin-bottom: 10px;
+        background-color: gold;
+    }
+    .idiom{
+        background-color: $marron;
+        font-size: 5vw;
+        width: 20vw;
+        height: 50vw;
+        grid-column: 1/2;
+        margin-left: 10px;
+    }
+    input{
+        font-size: 3vw;
+        width: 55vw;
+        height: 50vw;
+    }
+    .curs{
+        background-color: $marron;
+        font-size: 5vw;
+        margin-right: 3rem;
+        width: 20vw;
+        height: 50vw;
+        grid-column: 1/2;
+        margin-left: 10px;
+    }
+    textarea{
+        font-size: 3vw;
+        width: 55vw;
+        height: 50vw;
+    }
+}
+.BT{
+    display: flex;
+    justify-content: center;
+
+    .BT_1{
+        margin: 5px;
+    }
+    .botones input{
+        font-size: 5vw;
+        font-weight:bold;
+        color:white;
+        background:goldenrod;
+        border:0rem;
+        width:auto;
+        height:auto;
+    }
+}
+
 /*programaEstudios*/
 
 /*Precio Cursos*/
@@ -319,7 +321,7 @@ td {
         }
         p{
             font-size: 5vw;
-            color:teal;
+            color:mediumblue;
         }
     }
 }
@@ -406,7 +408,7 @@ td {
     .Mapa{
         margin-top: 5px;
         width: 70vw;
-        height: 24vw;
+        height: 70vw;
     }
     .adjunto{
         background-color:$chocolate;
